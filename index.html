@@ -26,7 +26,7 @@
         <a href="/tr-tr/" class="navbar-brand">
           <img src="https://cdn.turkishairlines.com/m/14f15626e0a5407c/original/Turkish-Airlines-Small-3x-png.png" class="visible-sm visible-xs" height="35px" style="width:35px!important">
           <img src="https://cdn.turkishairlines.com/m/2190da9e53a70e4e/original/THY-LOGO.png" class="hidden-sm hidden-xs" height="40px" alt="THY LOGO"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" onclick="showHamburger()">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="toggler-items collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -40,21 +40,16 @@
             <li class="nav-item">
               <a class="nav-link" href="#">KEŞFET</a>
             </li>
+            <li class="nav-item d-block d-sm-none">
+              <a class="nav-link" href="#">
+                Üye ol</a>
+            </li class="nav-item">
+            <li class="d-block d-sm-none">
+              <a class="nav-link" href="#">
+                <i class="far fa-user"></i>
+              </a>
+            </li>
           </ul>
-          <div class="row">
-            <ul>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Üye ol</a>
-              </li class="nav-item">
-              <li>
-                <a class="nav-link" href="#">
-                  <i class="far fa-user"></i>
-                </a>
-              </li>
-            </ul>
-            </ul>
-          </div>
         </div>
     </div>
     </nav>
@@ -96,7 +91,17 @@
     </div>
     </div>
   </section>
+  <script type="text/javascript">
 
+    function showHamburger() {
+      if(document.getElementById("navbarTogglerDemo01").classList.contains("show")){
+        document.getElementById("navbarTogglerDemo01").classList.remove("show");
+      }else{
+        document.getElementById("navbarTogglerDemo01").classList.add("show");
+      }
+    }
+    
+  </script>
 </body>
 
 </html>
