@@ -97,15 +97,10 @@ button {
 .heading-background {
   font-weight: 200;
 }
-.active {
-  border: 2px rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  margin-right: 10px;
-  vertical-align: middle;
-}
+
 .nav-pills {
-  background-color: rgba(35, 43, 56, 0.25);
   backface-visibility: visible !important;
+  background-color: #0000;
 }
 .btn {
   color: #fff;
@@ -116,8 +111,17 @@ button {
 .visible-md,
 .visible-sm,
 .visible-xs {
+
   display: none !important;
 }
+.container-bookings {
+  background-color: rgba(35, 43, 55, 0.6);
+  padding: 60px 0;
+}
+.search {
+
+   {
+
 .bookings {
   text-align: center;
   margin-top: 30px;
@@ -133,7 +137,17 @@ button {
 .bookings li {
   float: left;
   padding: 2px 5px;
-  border: 1px solid black;
+}
+
+.bookings li .options{
+  border: 2px #fff;
+  border-radius: 4px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.active-search {
+  border: none;
 }
 /*@media (max-width: 767px) {
     .visible-sm, .visible-xs {
