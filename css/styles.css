@@ -1,38 +1,42 @@
 * {
-padding: 0;
-box-sizing: border-box;
-/*background-color: #fff;*/
+  padding: 0;
+  box-sizing: border-box;
+  /*background-color: #fff;*/
 }
-li, a, button{
+li,
+a,
+button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
   /*background-color: #374045;*/
 }
-header, nav, ul{
-    background-color: #374045;
+header,
+nav,
+ul {
+  background-color: #374045;
 }
-header{
+header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 30px 20px;
 }
-nav{
+nav {
   /*display: table;*/
-  order:2;
+  order: 2;
   margin-right: auto;
   padding: 10px 10px;
 }
-.container-fluid{
+.container-fluid {
   padding: 0;
 }
-.navbar-brand{
+.navbar-brand {
   margin-right: 0;
 }
 
-.navbar{
+.navbar {
   padding: 0;
   align-items: flex-start;
 }
@@ -40,11 +44,11 @@ nav{
 .nav-item {
   padding: 0 18px;
 }
-.toggler-items{
+.toggler-items {
   margin-right: 70px;
 }
 
-.logo{
+.logo {
   /*order:1;*/
   cursor: pointer;
   margin-right: auto;
@@ -64,18 +68,17 @@ nav{
 .nav_links li a{
   transition: all 0.3s ease 0s;
 } */
-button{
+button {
   /*margin-left: 20px;*/
   border-style: none;
   padding: 9px 25px;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
-
 }
 
-.background-img-snow{
-  background-image: url('https://cdn.turkishairlines.com/m/37e3e29514b6f483/original/Mainpage-1400x600.webp');
+.background-img-snow {
+  background-image: url("https://cdn.turkishairlines.com/m/37e3e29514b6f483/original/Mainpage-1400x600.webp");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -87,48 +90,52 @@ button{
   font-size: 30px;
   color: #fff;
 }
-.heading-backgroundimg{
+.heading-backgroundimg {
   padding-top: 20px;
 }
 /*above is the heading div class,below is the h2 class*/
-.heading-background{
+.heading-background {
   font-weight: 200;
 }
-.active{
-  border: 2px rgba(255,255,255,.5);
+.active {
+  border: 2px rgba(255, 255, 255, 0.5);
   border-radius: 4px;
- margin-right: 10px;
+  margin-right: 10px;
   vertical-align: middle;
 }
-.nav-pills{
-  background-color: rgba(35,43,56,.25);
-  backface-visibility: visible!important;
+.nav-pills {
+  background-color: rgba(35, 43, 56, 0.25);
+  backface-visibility: visible !important;
 }
-.btn{
+.btn {
   color: #fff;
 }
 
-.hidden,.visible-lg,.visible-md,.visible-sm,.visible-xs {
-    display: none!important;
+.hidden,
+.visible-lg,
+.visible-md,
+.visible-sm,
+.visible-xs {
+  display: none !important;
 }
-.bookings{
+.bookings {
   text-align: center;
   margin-top: 30px;
-      }
-      .bookings ul {
-          display: inline-block;
-          margin: 0;
-          padding: 0;
-          /* For IE, the outcast */
-          zoom:1;
-          *display: inline;
-      }
-      .bookings li {
-          float: left;
-          padding: 2px 5px;
-          border: 1px solid black;
-      }
-  /*@media (max-width: 767px) {
+}
+.bookings ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* For IE, the outcast */
+  zoom: 1;
+  *display: inline;
+}
+.bookings li {
+  float: left;
+  padding: 2px 5px;
+  border: 1px solid black;
+}
+/*@media (max-width: 767px) {
     .visible-sm, .visible-xs {
         visibility: visible!important;
       }
@@ -136,3 +143,10 @@ button{
           display: block!important;
       }
   }*/
+/* .user-menu-mobile {
+  display: inline-block;
+  float: right;
+} */
+.user-menu-mobile li {
+  display: inline-block;
+}
