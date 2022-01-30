@@ -107,10 +107,8 @@ button {
 .container-bookings {
   background-color: rgba(35, 43, 55, 0.4);
   padding: 60px 0;
-  width: 60%;
+  width: 90%;
   margin: auto;
-}
-.search {
 }
 
 .bookings {
@@ -123,6 +121,7 @@ button {
   /* For IE, the outcast */
   zoom: 1;
   *display: inline;
+  list-style-type: none;
 }
 .bookings li {
   float: left;
@@ -135,9 +134,44 @@ button {
   margin-right: 10px;
   vertical-align: middle;
 }
+.search ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+input {
+  height: 80px;
+  width: 280px;
+}
 
 .active-search {
   border: none;
+}
+#calendar-list {
+  list-style-type: none;
+  height: 79px;
+  padding: 25px 0;
+  width: 150px;
+}
+
+.fa-calendar-alt {
+  bottom: 0;
+  padding-bottom: 20px;
+  margin-left: 12px;
+}
+
+.seat-type {
+  width: 150px;
+  height: 79px;
+  background-color: #374045;
+}
+#seat-type-list {
+  display: table-caption;
+  width: 80px;
+  height: 78px;
+}
+.man-icon {
+  background-color: #374045;
 }
 /*@media (max-width: 767px) {
     .visible-sm, .visible-xs {
